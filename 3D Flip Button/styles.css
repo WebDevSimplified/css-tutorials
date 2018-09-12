@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    perspective: 800px;
+}
+
+.btn {
+    position: relative;
+    height: 150px;
+    width: 450px;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    transform: translateZ(-75px);
+}
+
+.btn:hover {
+    transform: rotateX(-90deg) translateY(75px);
+}
+
+.side {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.default-side {
+    background-color: white;
+    border: 10px solid #069;
+    color: #069;
+    transform: translateZ(75px);
+}
+
+.hover-side {
+    color: white;
+    background-color: #069;
+    transform: rotateX(90deg) translateZ(75px);
+}
