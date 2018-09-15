@@ -3,12 +3,21 @@
 }
 
 .spinner {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height: 300px;
     width: 300px;
+    height: 300px;
+}
+
+.spinner-sector {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 15px solid transparent;
+    mix-blend-mode: overlay;
 }
 
 .spinner-text {
@@ -16,29 +25,23 @@
     font-size: 2em;
 }
 
-.spinner-sector {
+.spinner-sector-blue {
     animation: rotate 2s ease-out infinite;
-    border-radius: 50%;
-    position: absolute;
-    border: 15px solid transparent;
     border-top: 15px solid lightblue;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: overlay;
 }
 
-.spinner-sector:nth-last-child(2) {
+.spinner-sector-red {
     animation: rotate 2.5s ease-in infinite;
-    border-top-color: lightcoral;
+    border-top: 15px solid lightcoral;
 }
 
-.spinner-sector:last-child {
+.spinner-sector-green {
     animation: rotate 1.5s ease-in-out infinite;
-    border-top-color: lightgreen;
+    border-top: 15px solid lightgreen;
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
+    from { transform: rotate(0); }
     to { transform: rotate(360deg); }
 }
 
