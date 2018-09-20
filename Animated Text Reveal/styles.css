@@ -1,37 +1,38 @@
 .reveal-text {
     font-size: 7em;
     font-weight: 900;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: url('reveal_background.jpg');
-    background-repeat: repeat-x;
-    background-size: 30px;
-    animation: reveal-background 2s ease-in-out;
-    animation-fill-mode: forwards;
+    color: white;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .reveal-text {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: url("reveal_background.jpg");
+        background-repeat: repeat-x;
+        animation: reveal-background 2s ease-in-out;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes reveal-background {
     0% {
-        background-size: 0px; 
+        background-size: 0px;
         background-position-y: 0%;
     }
     10% {
-        background-size: 30px; 
-        background-position-y: 0%
+        background-size: 30px;
+        background-position-y: 0%;
     }
-    35% { 
-        background-position-y: 100%;
-    }
-    45% {
+    35%, 45% {
         background-position-y: 100%;
     }
     70% {
-        background-size: 30px; 
+        background-size: 30px;
         background-position-y: 0%;
     }
     100% {
         background-size: 200px;
-        background-position-y: 0%;
     }
 }
