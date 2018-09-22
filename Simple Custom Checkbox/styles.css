@@ -36,6 +36,12 @@
     box-shadow: 0 0 20px black;
 }
 
+.checkbox-container input[type='checkbox']:disabled + label,
+.checkbox-container input[type='checkbox']:disabled {
+    color: #aaa;
+    cursor: default;
+}
+
 .checkbox-container input[type='checkbox']:checked + label::before {
     content: '\002714';
     background-color: #27AE60;
@@ -43,4 +49,9 @@
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.checkbox-container input[type='checkbox']:disabled + label::before {
+    background-color: #ccc;
+    border-color: #999;
 }
