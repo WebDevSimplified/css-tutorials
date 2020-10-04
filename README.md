@@ -1,4 +1,4 @@
-# css-tutorials
+# CSS-tutorials
 ## Introduction
 * This repo consist of various css tutorials with code that are easy to create, feel free to fork, star and share! :)
 
