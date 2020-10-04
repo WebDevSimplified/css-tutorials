@@ -30,7 +30,7 @@
 ![youtube-fill (1)](https://user-images.githubusercontent.com/56513661/95021016-24f29d80-068c-11eb-8f31-a89cfa325e80.png) https://youtu.be/YyLzwR-iXtI
 ![Simple Custom Checkbox](https://user-images.githubusercontent.com/56513661/95006099-03f36380-061e-11eb-912b-22d0c3dc8b34.gif)
 
-### Transaprent Login Form 
+### Transparent Login Form 
 ![youtube-fill (1)](https://user-images.githubusercontent.com/56513661/95021016-24f29d80-068c-11eb-8f31-a89cfa325e80.png) https://youtu.be/nLxA9froMOs
 ![transaprent login](https://user-images.githubusercontent.com/56513661/95006103-12417f80-061e-11eb-8861-5f76fa05d792.gif)
 
